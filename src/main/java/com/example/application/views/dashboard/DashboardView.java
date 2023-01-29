@@ -104,10 +104,11 @@ public class DashboardView extends Main {
         plotOptions.setMarker(new Marker(false));
         conf.addPlotOptions(plotOptions);
 
-        conf.addSeries(new ListSeries("Berlin", 189, 191, 291, 396, 501, 403, 609, 712, 729, 942, 1044, 1247));
-        conf.addSeries(new ListSeries("London", 138, 246, 248, 348, 352, 353, 463, 573, 778, 779, 885, 887));
-        conf.addSeries(new ListSeries("New York", 65, 65, 166, 171, 293, 302, 308, 317, 427, 429, 535, 636));
-        conf.addSeries(new ListSeries("Tokyo", 0, 11, 17, 123, 130, 142, 248, 349, 452, 454, 458, 462));
+        conf.addSeries(new ListSeries("Unteres Quatil", 189, 500, 291, 396, 501, 403, 200, 712, 729, 942, 1044, 1, 247));
+        conf.addSeries(new ListSeries("Oberes Quatil", 138, 246, 248, 348, 352, 353, 463, 573, 778, 779, 885, 887));
+        conf.addSeries(new ListSeries("Median", 65, 65, 166, 171, 293, 302, 308, 317, 427, 429, 535, 636));
+        conf.addSeries(new ListSeries("Min", 0, 11, 17, 123, 130, 142, 248, 349, 452, 454, 458, 462));
+        conf.addSeries(new ListSeries("Max", 0, 11, 17, 123, 130, 142, 248, 349, 452, 454, 458, 462));
 
         // Add it all together
         VerticalLayout viewEvents = new VerticalLayout(header, chart);
